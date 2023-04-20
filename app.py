@@ -188,6 +188,13 @@ def main():
     </div>
     </body>
     """
+     html_temp1="""
+    <body style="background-color:red;">
+    <div style="background-color:teal;padding:10px">
+    <h2 style="color:white;text-align:center;">Image Analysis Result</h2>
+    </div>
+    </body>
+    """
     st.markdown(html_temp,unsafe_allow_html=True)
 
     img_file_buffer = st.camera_input("Take a picture")
@@ -203,6 +210,7 @@ def main():
         st.text("original Image")
         st.image(image)
     if st.button("Recognise"):
+        st.markdown(html_temp1,unsafe_allow_html=True)
         result_img,ans,emotion,ans1=detect_faces(image,ans,emo,ans1)
         st.image(result_img)
         dat="The Uploaded Face is "+ ans +" , "+ "looks "+emotion+" and the Eyes are "+ans1
