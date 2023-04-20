@@ -190,7 +190,7 @@ def main():
     """
     html_temp1="""
     <body style="background-color:red;">
-    <div style="background-color:teal;padding:10px">
+    <div style="background-color:skyblue;padding:10px">
     <h2 style="color:white;text-align:center;">Image Analysis Result</h2>
     </div>
     </body>
