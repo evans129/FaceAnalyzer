@@ -6,3 +6,4 @@ Pillow==9.0.1
 numpy==1.23.5
 tensorflow
 yagmail
+protobuf==3.20.3
